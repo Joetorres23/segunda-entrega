@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    }
+    
+    
+    body {
+        background-color: wheat;
+    }
+    
+    .colorSubtitulos {
+        color: wheat;
+    }
+     
+    
+    header {
+        background-color: rgb(248, 97, 42);
+        background-size: cover;
+        align-items: center;
+        grid-area: header;
+    }
+    
+    .estiloIndex {
+        text-decoration: none;
+        color: wheat;
+        font-weight: bold;
+        background-color: #2c3e50;
+        font-size: 0.7rem;
+        text-align: start;
+        padding: 8px;
+        width: 20%;
+    }
+    
+    .aplicaFlexbox {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        list-style-type: none;
+    }
+    
+    li a {
+        text-decoration: none;
+        color: wheat;
+        font-weight: bold;
+        width: 50%;
+        background-color: #2c3e50;
+        font-size: 0.7em;
+        text-align: center;
+        padding: 8px;
+        margin: 0 10px 0 0;
+    }
+    
+    .sectionArribaIzquierda {
+        background-color: #2c3e50;
+        grid-area: cajaArribaIzquierda;
+    }
+    
+    .sectionArribaDerecha {
+        background-color: #2c3e50;
+        grid-area: cajaArribaDerecha;
+    }
+    
+    .sectionAbajoIzquierda {
+        background-color: #2c3e50;
+        grid-area: cajaAbajoIzquierda;
+    }
+    
+    .sectionAbajoDerecha {
+        background-color: #2c3e50;
+        grid-area: cajaAbajoDerecha;
+    }
+    
+    footer {
+        background-color: rgb(248, 97, 42);
+        grid-area: footer;
+        height: 8rem;
+    }
+    
+    
+    
+    
+    .aplicandoGird {
+        height: 100vh;
+        margin: 0%;
+        display: grid;
+        grid-gap: 0.5em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "cajaArribaIzquierda cajaArribaDerecha"
+        "cajaAbajoIzquierda cajaAbajoDerecha"
+        "footer footer";
+        
+    }
+    
+    .gird {
+        height: 100vh;
+        margin: 0%;
+        display: grid;
+        grid-gap: 0.5em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "cajaArribaIzquierda cajaArribaDerecha publicidad"
+        "cajaAbajoIzquierda cajaAbajoDerecha publicidad"
+        "footer footer footer";
+        
+    }
+    
+    
+    
+    @media only screen and (max-width: 330px){
+        .aplicandoGird {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "header" 
+            "cajaArribaIzquierda"
+            "cajaArribaDerecha"
+            "cajaAbajoIzquierda"
+            "cajaAbajoDerecha"
+            "footer";   
+        }
+    }
+    
+    @media only screen and (max-width: 480px){
+        .gird {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "header" 
+            "cajaArribaIzquierda"
+            "cajaArribaDerecha"
+            "cajaAbajoIzquierda"
+            "cajaAbajoDerecha"
+            "publicidad"
+            "footer";   
+        }
+    }
+    
+    .transformacion:hover{
+        background-color: rgb(248, 97, 42);
+        transform: scale(2);
+        width: 20%;
+        margin: 10px auto;
+    }
+    
+    .transicion:hover{
+        background-color: rgb(248, 97, 42);
+        transition: all 2s;
+    }
+    
+    .animacion{
+        background-color: #2c3e50;
+    }
+    
+    .animacion:hover{
+        animation: cambioColor 4s;
+    }
+    
+    @keyframes cambioColor{
+        100%{
+            background-color: #2c3e50;
+        }
+       
+        70%{
+            background-color: rgb(248, 97, 42);
+            border-radius: 5%;
+        }
+    }
+    
+    
+    .card {
+        background-color: #2c3e50;
+    }
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card-body {
+        color: wheat;
+    }
+    
+    .card-title {
+        background-color: #2c3e50;
+        color: wheat;
+    }
+    
+    .imagenAlto {
+        width: 21rem;
+        height: 21rem;
+    }
+    
+    .estiloContenedor {
+        padding: 0%;
+    }
+    
